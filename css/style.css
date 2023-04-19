@@ -63,10 +63,10 @@ body {
   text-align: left;
   background-color: #fff;
 }
-/* .navbg{
-  background-image:url(https://img.freepik.com/free-vector/happy-deepavali-greeting-banner-with-text-space-diya-design_1017-40294.jpg);opacity: 0.8;
+.navbg{
+  background-image:url(https://img.freepik.com/free-vector/happy-deepavali-greeting-banner-with-text-space-diya-design_1017-40294.jpg);opacity: 0.7;
   
-} */
+}
 .reviewbg{
   background-image:url(https://img.freepik.com/free-vector/realistic-ugadi-garland-illustration_52683-57950.jpg?w=1380&t=st=1681040120~exp=1681040720~hmac=825b6dd667ac3d75ddfe86c4e32429e13fd2d769c799a50af1ff79806f248512);opacity: 0.4;width: 350px;
 
@@ -76,6 +76,8 @@ body {
   background-color: #fd9551;
   transform-origin: bottom;
   display: block;
+  clip-path: polygon(0 0, 60% 50px, 100% 0, 100% 100%, 0 100%);
+
  
   
 }
