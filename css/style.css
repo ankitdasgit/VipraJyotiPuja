@@ -10290,12 +10290,13 @@ margin: 0px 100px;
 
 .foot{
   
-  margin-top: 70px;
+  margin: 70px;
 padding: 9px 8px;
 text-align: center;
 
+
 }
-.foot button{
+.foot a{
   background-color: #fa5807 ;
   padding: 14px 20px;
   border:1px solid white;
@@ -10303,11 +10304,32 @@ text-align: center;
   font-size: 17px;
   font-weight: bold;
   border-radius: 15px;
+  
 }
 .Servicediv{
   background-color: antiquewhite;
   height: 300%;
   margin-top: 50px;
+  padding-bottom: 10px;
+}
+.mu-main-navbar {
+  background-color: transparent;
+  border: none;
+  padding: 25px 0;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.mu-main-navbar .mu-main-nav a {
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .booking{
   margin-top: 10px;
