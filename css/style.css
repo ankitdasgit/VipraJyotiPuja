@@ -61,14 +61,17 @@ body {
   line-height: 1.5;
   color: #6C6A74;
   text-align: left;
+
   background-color: #fff;
 }
 .navbg{
-  background-image:url(https://img.freepik.com/free-vector/happy-deepavali-greeting-banner-with-text-space-diya-design_1017-40294.jpg);opacity: 0.7;
-  
+  /* background-image:url(https://img.freepik.com/free-vector/happy-deepavali-greeting-banner-with-text-space-diya-design_1017-40294.jpg);opacity: 0.7; */
+  position: static;
+  top: 0px;
+  z-index: 100;
 }
 .reviewbg{
-  background-image:url(https://img.freepik.com/free-vector/realistic-ugadi-garland-illustration_52683-57950.jpg?w=1380&t=st=1681040120~exp=1681040720~hmac=825b6dd667ac3d75ddfe86c4e32429e13fd2d769c799a50af1ff79806f248512);opacity: 0.4;width: 350px;
+  /* background-image:url(https://img.freepik.com/free-vector/realistic-ugadi-garland-illustration_52683-57950.jpg?w=1380&t=st=1681040120~exp=1681040720~hmac=825b6dd667ac3d75ddfe86c4e32429e13fd2d769c799a50af1ff79806f248512);opacity: 0.4;width: 350px; */
 
 }
 
@@ -95,9 +98,18 @@ body {
 }
 
 .aboutbg{
-background-color:#fd9551;
+/* background-color:#fd9551; */
 border-radius: 50% 40% 50% 20%;
   background-color:#bee5eb;
+
+  position: relative;
+  bottom: -300px;
+  /* top: -20px; */
+ z-index:2;
+  
+}
+.aboutandservice{
+margin-top: -300px;
 }
 
 /* .selling{
@@ -10193,4 +10205,127 @@ h6,
   height: 230px;
   width: 100%;
 }
+#aa-preloader-area{
+  background-color: #fff;
+  position: fixed;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  
+}
+.preloader{
+  position: relative;
+ top: 20%;
+  
+}
 
+
+
+.services{
+  display: flex;
+  justify-content: center;
+  padding-top: 350px;
+}
+.paint{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.painting:hover{
+  transform: scale(1.3);
+  transition: transform .4s;
+}
+.homas{
+  width: 287px;
+  height: 218px;
+margin-top: 20px;
+  overflow: hidden;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.brimg{
+  border-radius: 10px;
+}
+.homas1{
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+}
+.homas1:hover{
+  transform: scale(1.4);
+  transition: transform .6s;
+}
+.gs{
+  display: flex;
+  justify-content: center;
+  color: #EB5103;
+  background-color: white;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.gs:hover{
+  color:#cf4906;
+}
+.mainbar1{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin: 0px 100px;
+
+}
+.gs h3{
+  background-color:white;
+}
+
+.foot{
+  
+  margin-top: 70px;
+padding: 9px 8px;
+text-align: center;
+
+}
+.foot button{
+  background-color: #fa5807 ;
+  padding: 14px 20px;
+  border:1px solid white;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+.Servicediv{
+  background-color: antiquewhite;
+  height: 300%;
+  margin-top: 50px;
+}
+.booking{
+  margin-top: 10px;
+  padding: 9px 8px;
+  text-align: center;
+}
+.booking button{
+  background-color:#a71d2a ;
+  padding: 10px 30px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+ 
+
+}
+.booking button:hover{
+  background-color: #b34700;
+
+}
