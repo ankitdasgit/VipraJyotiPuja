@@ -12,7 +12,7 @@
     <!-- Favicon -->
     <link href="img/vp.jpg" rel="icon">
 
-    
+
 
 
     <!-- Google Web Fonts -->
@@ -41,7 +41,7 @@
 
 <body>
 
-        <!-- preloader -->
+    <!-- preloader -->
     <!-- <div id="aa-preloader-area">
         <div class="preloader">
           <img src="img/preloader.gif" alt=" loader img">
@@ -138,7 +138,78 @@
 
                             <a href="#contact" class="nav-item nav-link">Contact</a>
                         </div>
-                        <a  href="enquiry.html" class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" type="button"  data-toggle="model" data-target="#enquire">Book Our Pandit</a>
+                        <button class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block trigger" id="show-modal" type="button"
+                            data-toggle="model" data-target="#enquire">Book Our Pandit</button>
+
+                        <!-- enquire form code -->
+                        <div class="col-lg-5 model modal" id="enquire">
+                            <div class="card border-0">
+                                <div class="card-header bg-light text-center p-4">
+                                    <h1 class="m-0">Contact With us</h1>
+                                    <button class="close close-button" data-dismiss="model">&times;</button>
+                                </div>
+                                <div class="card-body rounded-bottom bg-primary p-5 modal-content">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control border-0 p-4" placeholder="Your name"
+                                                required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control border-0 p-4"
+                                                placeholder="Your email" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="phone" class="form-control border-0 p-4" placeholder="Mobile"
+                                                required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control border-0 p-4" placeholder="puja Name"
+                                                required="required" />
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-dark btn-block border-0 py-3"
+                                                type="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+  
+
+                        <script>
+                            // const modal = document.querySelector(".modal");
+                            // const trigger = document.querySelector(".trigger");
+                            // const closeButton = document.querySelector(".close-button");
+
+                            // function toggleModal() {
+                            //     modal.classList.toggle("show-modal");
+                            // }
+
+                            // function windowOnClick(event) {
+                            //     if (event.target === modal) {
+                            //         toggleModal();
+                            //     }
+                            // }
+
+                            // trigger.addEventListener("click", toggleModal);
+                            // closeButton.addEventListener("click", toggleModal);
+                            // window.addEventListener("click", windowOnClick);
+
+                            document.querySelector("#show-modal").addEventListener("click",function(){
+                                document.querySelector(".modal").classList.add("active");
+                            });
+
+                            document.querySelector(".close-button .modal").addEventListener("click",function(){
+                                document.querySelector(".modal").classList.remove("active");
+                            });
+
+
+                        </script>
+
+
+
+
                     </div>
                 </nav>
             </div>
@@ -197,114 +268,116 @@
 
 
     <!-- About Start -->
-
-    <div class="aboutandservice">
-    <section id="mu-about-us" class="aboutbg">
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="row align-items-center">
-                    <div class="col-lg-4">
-                        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/pandit.jpg" alt="">
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="text-left mb-4">
-                            <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Pandit ji
-                            </h5>
-                            <h1>Innovative Way To Learn</h1>
+        <section id="mu-about-us" class="aboutbg">
+            <div class="container-fluid py-5">
+                <div class="container py-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <img class="img-fluid rounded mb-4 mb-lg-0" src="img/pandit.jpg" alt="">
                         </div>
-                        <p>Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua
-                            duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam
-                            sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at
-                            sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy
-                            stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy
-                            elitr dolores justo aliquyam ipsum stet</p>
-                        <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                        <div class="col-lg-7">
+                            <div class="text-left mb-4">
+                                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Pandit
+                                    ji
+                                </h5>
+                                <h1>Innovative Way To Learn</h1>
+                            </div>
+                            <p>Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet
+                                voluptua
+                                duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est.
+                                Diam
+                                sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore
+                                tempor at
+                                sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no
+                                nonumy
+                                stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy
+                                elitr dolores justo aliquyam ipsum stet</p>
+                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- About End -->
+        </section>
+        <!-- About End -->
 
 
 
-    <!-- service section -->
+        <!-- service section -->
 
-     <div class="Servicediv" id="serviceid">
-        <div class="services">
-            <h1>Our Puja Services</h1>
-        </div>
-        <div class="paint">
-            <img class="painting" src="https://divyapuja.in/wp-content/uploads/2019/09/new3.png"></img>
-        </div>
-    
-        <div class="mainbar1">
-            <div class="brimg"> 
-                <div class="homas ">
-                    <img class="homas1" src="https://divyapuja.in/wp-content/uploads/2019/09/Homas.jpg">
-        
+        <div class="Servicediv" id="serviceid">
+            <div class="services">
+                <h1>Our Puja Services</h1>
+            </div>
+            <div class="paint">
+                <img class="painting" src="https://divyapuja.in/wp-content/uploads/2019/09/new3.png"></img>
+            </div>
+
+            <div class="mainbar1">
+                <div class="brimg">
+                    <div class="homas ">
+                        <img class="homas1" src="https://divyapuja.in/wp-content/uploads/2019/09/Homas.jpg">
+
+                    </div>
+                    <div class="gs">
+                        <h3>Homas</h3>
+                    </div>
+                    <div class="booking">
+                        <button>Book Our Pandit</button>
+                    </div>
+
                 </div>
-                <div class="gs">
-                    <h3>Homas</h3>
+
+                <div>
+                    <div class="homas">
+                        <img class="homas1" src="https://divyapuja.in/wp-content/uploads/2019/09/Puja1.jpg">
+
+                    </div>
+                    <div class=" gs">
+                        <h3>Pujas</h3>
+                    </div>
+                    <div class="booking">
+                        <button>Book Our Pandit</button>
+                    </div>
                 </div>
-                <div class="booking">
-                    <button>Book Our Pandit</button>
+
+                <div>
+                    <div class="homas ">
+                        <img class="homas1" src="https://divyapuja.in/wp-content/uploads/2019/09/Shradha-Karma-2.jpg">
+
+                    </div>
+                    <div class="gs">
+                        <h3>Shardha Karma</h3>
+                    </div>
+                    <div class="booking">
+                        <button>Book Our Pandit</button>
+                    </div>
                 </div>
 
+                <div>
+                    <div class="homas ">
+                        <img class="homas1" src="https://divyapuja.in/wp-content/uploads/2019/09/Vrathas.jpg">
+
+                    </div>
+                    <div class="gs">
+                        <h3>Vrathas</h3>
+                    </div>
+                    <div class="booking">
+                        <button>Book Our Pandit</button>
+                    </div>
+                </div>
             </div>
-    
-          <div>
-            <div class="homas">
-                <img class="homas1" src="https://divyapuja.in/wp-content/uploads/2019/09/Puja1.jpg">
-                
+
+            <div class="foot">
+                <a href="/service.html">View All Services</a>
             </div>
-            <div class=" gs">
-                <h3>Pujas</h3>
-            </div>
-            <div class="booking">
-                <button>Book Our Pandit</button>
-            </div>
-          </div>
-    
-           <div>
-            <div class="homas ">
-                <img class="homas1" src="https://divyapuja.in/wp-content/uploads/2019/09/Shradha-Karma-2.jpg">
-                
-            </div>
-            <div class="gs">
-                <h3>Shardha Karma</h3>
-             </div>
-             <div class="booking">
-                <button>Book Our Pandit</button>
-            </div>
-           </div>
-    
-        <div>
-            <div class="homas ">
-                <img class="homas1" src="https://divyapuja.in/wp-content/uploads/2019/09/Vrathas.jpg">
-                
-            </div>
-            <div class="gs">
-                <h3>Vrathas</h3>
-            </div>
-            <div class="booking">
-                <button>Book Our Pandit</button>
-            </div>  
+
         </div>
-        </div>
-        
-        <div class="foot">
-            <a href="/service.html">View All Services</a>
-        </div>
-        
-     </div>
 
 
 
 
-    </div>
-<!-- gallery section -->
-<!-- <section>
+    <!-- gallery section -->
+    <!-- <section>
 <div class="gallery">
     <img src="images/WhatsApp Image 2023-03-28 at 9.3.54 AM.jpeg">
     <img src="images/WhatsApp Image 2023-03-28 at 9.36.06 AM.jpeg">
@@ -330,7 +403,7 @@
 
 
 
-<!--    
+    <!--    
 
     
     <section class="selling" style="margin: 90px 0">
@@ -355,7 +428,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5 reviewbg" id="Reviews" >
+    <div class="container-fluid py-5 reviewbg" id="Reviews">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
@@ -400,80 +473,82 @@
     <!-- Testimonial End -->
 
 
- <!-- Registration Start -->
- <div class="container-fluid bg-registration py-5" id="contact" style="margin-bottom: 20px;">
-    <div class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-                <div class="mb-4">
-                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Service</h5>
-                    <h1 class="text-white">Puja Services</h1>
-                </div>
-                <p class="text-white">We are a web based company providing an all inclusive package to ensure that
-                    your religious and ceremonial needs are attended to as well as sorted efficiently and under one
-                    roof. Right from arrangement of a wide array of Pujas and
-                    ceremonies to hiring a Pandit or conducting the entire process with clock work precision.</p>
-                <ul class="list-inline text-white m-0">
-                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Rudrabhishek Puja</li>
-                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Office Opening or New Business
-                        Puja</li>
-                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Satyanarayan Puja</li>
-                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Any Homos</li>
-
-                </ul>
-            </div>
-            <div class="col-lg-5">
-                <div class="card border-0">
-                    <div class="card-header bg-light text-center p-4">
-                        <h1 class="m-0">Contact With us</h1>
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration py-5" id="contact" style="margin-bottom: 20px;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Service</h5>
+                        <h1 class="text-white">Puja Services</h1>
                     </div>
-                    <div class="card-body rounded-bottom bg-primary p-5">
-                        <form onsubmit="sendEmail();
+                    <p class="text-white">We are a web based company providing an all inclusive package to ensure that
+                        your religious and ceremonial needs are attended to as well as sorted efficiently and under one
+                        roof. Right from arrangement of a wide array of Pujas and
+                        ceremonies to hiring a Pandit or conducting the entire process with clock work precision.</p>
+                    <ul class="list-inline text-white m-0">
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Rudrabhishek Puja</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Office Opening or New Business
+                            Puja</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Satyanarayan Puja</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Any Homos</li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-light text-center p-4">
+                            <h1 class="m-0">Contact With us</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-primary p-5">
+                            <form onsubmit="sendEmail();
                         reset(); return false;">
-                            <div class="form-group">
-                                <input type="text" id="name" class="form-control border-0 p-4" placeholder="Your name"
-                                    required="required" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" class="form-control border-0 p-4" placeholder="Your email" />
-                            </div>
-                            <div class="form-group">
-                                <input type="phone" id="mobile" class="form-control border-0 p-4" placeholder="Mobile"
-                                    required="required" />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="message" class="form-control border-0 p-4" placeholder="Message"
-                                    required="required" />
-                            </div>
-                            <div>
-                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Submit</button>
-                            </div>
-                        </form>
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control border-0 p-4"
+                                        placeholder="Your name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control border-0 p-4"
+                                        placeholder="Your email" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="phone" id="mobile" class="form-control border-0 p-4"
+                                        placeholder="Mobile" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="message" class="form-control border-0 p-4"
+                                        placeholder="Message" required="required" />
+                                </div>
+                                <div>
+                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Registration End -->
+    <!-- Registration End -->
 
 
 
 
- <!-- Start Map section -->
+    <!-- Start Map section -->
     <section id="mu-map" class="mapsection" style="margin: 40px 0">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.1102190518263!2d75.76303757890408!3d23.15410387961391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963753c1bd4884d%3A0x2a82b914d4ae43c6!2sShri%20Hatkeshwar%20Vihar%20%26%20Homes!5e0!3m2!1sen!2sin!4v1679995380338!5m2!1sen!2sin"  
-         style="border: 10px; border-color: coral;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        width="100%" height="170%"frameborder="0" allowfullscreen></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.1102190518263!2d75.76303757890408!3d23.15410387961391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963753c1bd4884d%3A0x2a82b914d4ae43c6!2sShri%20Hatkeshwar%20Vihar%20%26%20Homes!5e0!3m2!1sen!2sin!4v1679995380338!5m2!1sen!2sin"
+            style="border: 10px; border-color: coral;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" width="100%" height="170%" frameborder="0"
+            allowfullscreen></iframe>
     </section>
     <!-- End Map section -->
 
 
 
     <!-- Footer Start -->
-  transform-origin: bottom;
-  <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 30px;">
+    transform-origin: bottom;
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 30px;">
         <div class="row pt-5">
             <div class="col-lg-7 col-md-12">
                 <div class="row">
@@ -528,7 +603,7 @@
                         href="https://ankitdasgit.github.io/WebTown/">WebTown</a>
                 </p>
             </div>
-            
+
         </div>
     </div>
     <!-- Footer End -->
@@ -538,23 +613,23 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-  <!-- jQuery library -->
-  <script src="assets/js/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="assets/js/bootstrap.js"></script>
-  <!-- Slick slider -->
-  <script type="text/javascript" src="assets/js/slick.js"></script>
-  <!-- Counter -->
-  <script type="text/javascript" src="assets/js/waypoints.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
-  <!-- Date Picker -->
-  <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
-  <!-- Mixit slider -->
-  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
-  <!-- Add fancyBox -->
-  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
-  <!-- Custom js -->
-  <script src="assets/js/custom.js"></script>
+    <!-- jQuery library -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Slick slider -->
+    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <!-- Counter -->
+    <script type="text/javascript" src="assets/js/waypoints.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+    <!-- Date Picker -->
+    <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+    <!-- Mixit slider -->
+    <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+    <!-- Custom js -->
+    <script src="assets/js/custom.js"></script>
 
 
 
@@ -578,25 +653,25 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script>
-        function sendEmail(){
-          Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "dasankit40@gmail.com",
-            Password : "7824E6AB87CCD5753348FA75526468D18B31",
-            From :  "paytmuser40@gmail.com",
-            To : 'paytmuser40@gmail.com',
-            ReplyFrom : document.getElementById("email").value,
-            Subject : "New Enquiry from VipraJyotiPuja",
-            Body : " name:"+ document.getElementById("name").value
-            +"<br>  email:"+ document.getElementById("email").value
-            +"<br>  Mobile No.:"+ document.getElementById("mobile").value
-            +"<br>  Message:"+ document.getElementById("message").value
-        }).then(
-          message => alert("Thank you for Contact with us :) ")
-        );
-    }
-  
-      </script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "dasankit40@gmail.com",
+                Password: "7824E6AB87CCD5753348FA75526468D18B31",
+                From: "paytmuser40@gmail.com",
+                To: 'paytmuser40@gmail.com',
+                ReplyFrom: document.getElementById("email").value,
+                Subject: "New Enquiry from VipraJyotiPuja",
+                Body: " name:" + document.getElementById("name").value
+                    + "<br>  email:" + document.getElementById("email").value
+                    + "<br>  Mobile No.:" + document.getElementById("mobile").value
+                    + "<br>  Message:" + document.getElementById("message").value
+            }).then(
+                message => alert("Thank you for Contact with us :) ")
+            );
+        }
+
+    </script>
 
 </body>
 
