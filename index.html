@@ -34,9 +34,6 @@
     <link rel="stylesheet" href="gallery.css">
 
 
-
-
-
 </head>
 
 <body>
@@ -138,79 +135,11 @@
 
                             <a href="#contact" class="nav-item nav-link">Contact</a>
                         </div>
-                        <button class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block trigger" id="show-modal" type="button"
-                            data-toggle="model" data-target="#enquire">Book Our Pandit</button>
-
-                        <!-- enquire form code -->
-                        <div class="col-lg-5 model modal" id="enquire">
-                            <div class="card border-0">
-                                <div class="card-header bg-light text-center p-4">
-                                    <h1 class="m-0">Contact With us</h1>
-                                    <button class="close close-button" data-dismiss="model">&times;</button>
-                                </div>
-                                <div class="card-body rounded-bottom bg-primary p-5 modal-content">
-                                    <form>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control border-0 p-4" placeholder="Your name"
-                                                required="required" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control border-0 p-4"
-                                                placeholder="Your email" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="phone" class="form-control border-0 p-4" placeholder="Mobile"
-                                                required="required" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control border-0 p-4" placeholder="puja Name"
-                                                required="required" />
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-dark btn-block border-0 py-3"
-                                                type="submit">Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
-  
-
-                        <script>
-                            // const modal = document.querySelector(".modal");
-                            // const trigger = document.querySelector(".trigger");
-                            // const closeButton = document.querySelector(".close-button");
-
-                            // function toggleModal() {
-                            //     modal.classList.toggle("show-modal");
-                            // }
-
-                            // function windowOnClick(event) {
-                            //     if (event.target === modal) {
-                            //         toggleModal();
-                            //     }
-                            // }
-
-                            // trigger.addEventListener("click", toggleModal);
-                            // closeButton.addEventListener("click", toggleModal);
-                            // window.addEventListener("click", windowOnClick);
-
-                            document.querySelector("#show-modal").addEventListener("click",function(){
-                                document.querySelector(".modal").classList.add("active");
-                            });
-
-                            document.querySelector(".close-button .modal").addEventListener("click",function(){
-                                document.querySelector(".modal").classList.remove("active");
-                            });
-
-
-                        </script>
-
-
-
-
+                        <button class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block open-button" onclick="openform()" type="button">Book Our Pandit</button>
                     </div>
+
+
+              
                 </nav>
             </div>
         </div>
